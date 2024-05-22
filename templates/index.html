@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pizza Hub</h1>
+    <div class="container">
+        <div class="restaurants-section">
+            <h2>Restaurants</h2>
+            <ul id="restaurants-list"></ul>
+        </div>
+        <div class="pizzas-section">
+            <h2>Pizzas</h2>
+            <ul id="pizzas-list"></ul>
+        </div>
+        <div class="add-section">
+            <h2>Add Restaurant Pizza</h2>
+            <form id="add-restaurant-pizza-form">
+                <label for="restaurant-id">Restaurant ID:</label>
+                <input type="number" id="restaurant-id" required>
+                <label for="pizza-id">Pizza ID:</label>
+                <input type="number" id="pizza-id" required>
+                <label for="price">Price:</label>
+                <input type="number" id="price" required min="1" max="30">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
